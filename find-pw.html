@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>找回密码</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+        <div class="page">
+            <!-- header -->
+            <header>
+                <div class="container">
+                    <div class="logo pull-left">
+                        <a href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                    </div>
+                    <div class="pull-right user-action">
+                        <a href="login.html" class="">登录</a>
+                        <a href="regist.html" class="">注册</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </header>
+            <!-- header end -->
+            <!-- navigation -->
+            <nav>
+                <div class="container">
+                    <ul class="main-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="service.html">服务介绍</a></li>
+                        <li><a href="team.html">专家团队</a></li>
+                        <li><a href="case.html">成功案例</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- navigation end -->
+
+            <!-- main area -->
+            <div class="primary gray">
+
+                <div class="container content">
+                    <section class="regist">
+                        <div class="row">
+                            <div class="col-xs-8 col-xs-offset-2">
+                                <div class="white-block"></div>
+                                <h1>找回密码</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="regist-area">
+                        <div class="section-inner">
+                            <div class="row">
+                                <div class="col-xs-4 col-xs-offset-4">
+                                    <form role="form">
+                                    	<!-- 错误信息在这里显示 -->
+                                    	<div class="error hide text-danger">
+                                    		错误信息
+                                    		<div class="white-block"></div>
+                                    	</div>
+                                    	<div class="tab-content">
+                                            <div class="tab-pane active" id="stepOne">
+	                                             <div class="form-group" data-required>
+		                                            <label for="loginname">请输入您绑定帐户的邮箱、手机号码、或者用户名：</label>
+		                                            <input type="text" class="form-control" id="loginname" placeholder="用户名/手机号/邮箱">
+		                                        </div>
+		                                        <div class="white-block"></div>
+		                                        <div class="white-block"></div>
+
+		                                        <button href="#stepTwo" data-toggle="tab" class="btn btn-blue center-block btn-padding-more">下一步</button>
+                                            </div>
+                                            <div class="tab-pane" id="stepTwo">
+
+												<div class="row">
+													<div class="col-xs-6 col-xs-offset-2">
+														<div class="radio">
+															<label>
+															<input type="radio" name="findBy" id="by-email" value="email" checked>
+															通过E-mail 重置
+															</label>
+														</div>
+														<div class="radio">
+															<label>
+															<input type="radio" name="findBy" id="by-phone" value="phone">
+															通过手机号 重置
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="white-block"></div>
+												<div class="white-block"></div>
+												<div class="white-block"></div>
+												<div class="row">
+													<div class="col-xs-6 text-right">
+														<button href="#stepOne" data-toggle="tab" class="btn btn-blue btn-padding-more">上一步</button>
+													</div>
+													<div class="col-xs-6 text-rigth">
+														<button type="submit" class="btn btn-blue btn-padding-more">提交</button>
+													</div>
+												</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="white-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- footer -->
+                <footer>
+                    <div class="container">
+                        <div class="share">
+                            <ul class="footer-share-list">
+                                <li><a href=""><img src="images/home-assets/weixin.png" alt="" /></a></li>
+                                <li><a href=""><img src="images/home-assets/weibo.png" alt="" /></a></li>
+                                <li><a href=""><img src="images/home-assets/blog.png" alt="" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info text-center">
+                            <p>关于云和恩墨  |  了解我们  |  联系我们</p>
+                            <p>京ICP备13025326号-2  |  京公网安备11010802012368号</p>
+                            <p>北京云和恩墨有限公司</p>
+                            <p>Copyright © 2012-2014 EnMoTech.com</p>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer end -->
+
+            </div>
+            <!-- main area end -->
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
