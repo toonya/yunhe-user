@@ -313,3 +313,7 @@ section form {
 .btn-light-blue:hover {
   background: #ddeaff;
 }
+/* pagination */
+.pagination li a {
+  color: #333;
+}
