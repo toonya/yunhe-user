@@ -196,6 +196,13 @@ footer hr {
 .user-sidebar ul a:hover {
   color: #000;
 }
+.user-content .title {
+  font-size: 16px;
+  font-weight: normal !important;
+}
+.user-content .title small {
+  font-size: 12px;
+}
 .user-content > section {
   padding: 15px;
   margin-bottom: 15px;
@@ -248,6 +255,12 @@ footer hr {
 }
 .table-bordered {
   margin-top: 15px;
+}
+.table-bordered thead {
+  background: #F3F3F3;
+}
+.table-bordered thead th {
+  border: 0 !important;
 }
 .table {
   color: #777;
@@ -316,4 +329,103 @@ section form {
 /* pagination */
 .pagination li a {
   color: #333;
+}
+.case-progress ul {
+  list-style: none;
+  width: 630px;
+  margin: 24px auto;
+  padding: 0;
+  padding-bottom: 36px;
+}
+.case-progress ul li {
+  width: 200px;
+  position: relative;
+  float: left;
+}
+.case-progress ul li > div.block {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #555;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+.case-progress ul li > div.block::after {
+  position: absolute;
+  right: 0;
+  width: 170px;
+  height: 10px;
+  border: 1px solid #555;
+  border-left: none;
+  border-right: none;
+  right: -171px;
+  top: 8px;
+  content: " ";
+}
+.case-progress ul li > div.describe {
+  position: absolute;
+  width: 300px;
+  text-align: center;
+  left: 15px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -30px;
+  font-size: 13px;
+}
+.case-progress ul li.now {
+  color: #36A739;
+}
+.case-progress ul li.done {
+  color: #36A739;
+}
+.case-progress ul li.done .block {
+  background: #36A739;
+  border-color: #36A739;
+  color: #fff;
+}
+.case-progress ul li.done .block::after {
+  background: #36A739;
+}
+.case-progress ul li:last-child {
+  width: 30px;
+}
+.case-progress ul li:last-child .block::after {
+  border: none;
+}
+.well {
+  line-height: 24px;
+}
+.well .row {
+  margin-bottom: 12px;
+  color: #555;
+}
+.well .row strong {
+  color: #222;
+}
+.log .row {
+  margin-bottom: 12px;
+}
+h4 {
+  margin: 24px 0;
+  color: #222;
+}
+.log,
+.case-comment {
+  color: #777;
+}
+.log form,
+.case-comment form {
+  margin: 0;
+  width: 100%;
+}
+.add-star .glyphicon-star {
+  color: #FF9200;
+}
+.add-star .glyphicon {
+  cursor: pointer;
+}
+.case-comment textarea {
+  height: 46px;
 }

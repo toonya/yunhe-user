@@ -82,4 +82,17 @@
 	}).on('hide.bs.collapse', function(){
 		$(this).closest('.panel').removeClass('active');
 	})
+
+	// ----------------------------------------
+	// ! comment score
+	// ----------------------------------------
+	$('.add-star').on('click', 'span.glyphicon', function(){
+		var star = $(this).index('.glyphicon') + 1;
+
+		$('.add-star .glyphicon:lt('+star+')').removeClass('glyphicon-star-empty').addClass('glyphicon-star');
+		$('.add-star .glyphicon:gt('+ (star-1)+')').removeClass('glyphicon-star').addClass('glyphicon-star-empty');
+	})
+
+	$('.add-star .glyphicon:lt('+$('.add-star :hidden').val()+')').removeClass('glyphicon-star-empty').addClass('glyphicon glyphicon-star');
+
 })(jQuery)

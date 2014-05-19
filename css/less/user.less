@@ -257,6 +257,14 @@ footer {
 }
 
 .user-content {
+	.title {
+		font-size: 16px;
+		font-weight: normal !important;
+
+		small {
+			font-size: 12px;
+		}
+	}
 	>section {
 		padding:15px;
 		margin-bottom: 15px;
@@ -320,6 +328,14 @@ footer {
 
 .table-bordered {
 	margin-top: 15px;
+
+	thead {
+		background: #F3F3F3;
+
+		th {
+			border: 0 !important;
+		}
+	}
 }
 .table {
 	color: #777;
@@ -403,4 +419,128 @@ section {
 /* pagination */
 .pagination li a {
 	color: #333;
+}
+
+.case-progress {
+	ul {
+		list-style: none;
+		width: 630px;
+		margin: 24px auto;
+		padding: 0;
+		padding-bottom: 36px;
+
+		li {
+			width: 200px;
+			position: relative;
+			float: left;
+
+			>div.block {
+				width: 30px;
+				height: 30px;
+				border: solid 1px #555;
+				line-height: 30px;
+				text-align: center;
+				position: relative;
+				font-weight: bold;
+
+				&::after {
+					position: absolute;
+					right: 0;
+					width: 170px;
+					height: 10px;
+					border: 1px solid #555;
+					border-left: none;
+					border-right: none;
+					right: -171px;
+					top: 8px;
+					content: " ";
+				}
+			}
+
+			>div.describe {
+				position: absolute;
+				width: 300px;
+				text-align: center;
+				left: 15px;
+				transform: translateX(-50%);
+				bottom: -30px;
+				font-size: 13px;
+			}
+		}
+
+		li.now {
+			color: #36A739;
+
+		}
+
+		li.done {
+			color: #36A739;
+
+			.block {
+				background: #36A739;
+				border-color: #36A739;
+				color: #fff;
+
+				&::after {
+					background: #36A739;
+				}
+			}
+		}
+
+		li:last-child {
+			width: 30px;
+
+			.block {
+				&::after {
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+.well {
+	line-height: 24px;
+	.row {
+		margin-bottom: 12px;
+		color: #555;
+
+		strong {
+			color: #222;
+		}
+	}
+}
+
+.log {
+	.row {
+		margin-bottom: 12px;
+	}
+}
+
+h4 {
+	margin: 24px 0;
+	color: #222;
+}
+
+.log, .case-comment {
+	color: #777;
+
+	form {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+.add-star {
+	.glyphicon-star {
+		color: #FF9200;
+	}
+
+	.glyphicon {
+		cursor: pointer;
+	}
+}
+
+.case-comment textarea {
+	height: 46px;
 }
