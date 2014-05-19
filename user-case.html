@@ -86,6 +86,7 @@
 								</div>
 								<div class="white-block"></div>
 								<div class="case-progress">
+									<!-- 正在进行的项目 li 添加 now; 已经完成的li 添加done; 未进行的不用添加 -->
 									<ul>
 										<li class="done"><div class="block">1</div><div class="describe">待处理</div></li>
 										<li class="done"><div class="block">2</div><div class="describe">处理中</div></li>
@@ -173,7 +174,8 @@
 													<span class="glyphicon glyphicon-star-empty"></span>
 													<span class="glyphicon glyphicon-star-empty"></span>
 													<span class="glyphicon glyphicon-star-empty"></span>
-													<input type="hidden" name="score" value="2" />
+													<!-- value 为分数值, 1-5 -->
+													<input type="hidden" name="score" value="5" />
 												</div>
 											</div>
 											<div class="col-xs-7">
