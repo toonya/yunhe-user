@@ -131,6 +131,10 @@
 		bind : function() {
 			this.options.$pre.on('click', 'a' , $.proxy(this.pre, this));
 			this.options.$next.on('click', 'a', $.proxy(this.next, this));
+
+			$('[data-to="pre"], [data-to="next"]').on('click', function(e){
+				e.preventDefault();
+			})
 		}
 	}
 

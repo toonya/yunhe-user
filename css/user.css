@@ -45,6 +45,9 @@ span.outstanding {
 .text-green {
   color: #86be24;
 }
+.text-dark-green {
+  color: #00B239;
+}
 .btn-green {
   background: #00B239;
   color: #fff;
@@ -70,6 +73,28 @@ span.btn-orange.btn-sm {
 }
 span.btn-orange.btn-sm:hover {
   color: #fff;
+}
+span.btn-gray.btn-sm {
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: default;
+}
+span.btn-gray.btn-sm:hover {
+  color: #333;
+}
+span.btn-white.btn-sm {
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: default;
+}
+span.btn-white.btn-sm:hover {
+  color: #333;
 }
 .btn-blue {
   background: #E7EFF3;
@@ -258,6 +283,7 @@ footer hr {
 }
 .table-bordered thead {
   background: #F3F3F3;
+  color: #333;
 }
 .table-bordered thead th {
   border: 0 !important;
@@ -302,6 +328,15 @@ footer hr {
   background: #FF6600;
   color: #fff;
 }
+.btn-gray {
+  background: #E4E4E4;
+  border: 1px solid #aaa;
+  color: #333;
+}
+.btn-white {
+  border: 1px solid #aaa;
+  color: #333;
+}
 small {
   font-size: 13px;
 }
@@ -325,6 +360,9 @@ section form {
 }
 .btn-light-blue:hover {
   background: #ddeaff;
+}
+.btn-light-blue.btn-sm {
+  padding: 6px 20px;
 }
 /* pagination */
 .pagination li a {
@@ -428,4 +466,56 @@ h4 {
 }
 .case-comment textarea {
   height: 46px;
+}
+.warning {
+  padding: 24px;
+  background: #F0F8FF;
+}
+.warning .glyphicon {
+  font-size: 60px;
+  position: relative;
+}
+.on-glyphicon {
+  font-family: 'Simsum', serif;
+  position: absolute;
+  left: 35%;
+  font-size: 45px;
+  top: 60%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.on-glyphicon .glyphicon {
+  font-size: 16px;
+}
+ul.inline-block {
+  vertical-align: middle;
+}
+ul.inline-block > li > a {
+  padding: 1px 12px;
+}
+ul.inline-block li {
+  margin-left: 12px;
+}
+.state-select {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #999999;
+}
+.state-select .nav-pills > li > a {
+  color: #999;
+  border-radius: 0;
+}
+.state-select .nav-pills > li.active > a {
+  background: #999;
+  color: #fff;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border-color: #CDCDCD;
 }
