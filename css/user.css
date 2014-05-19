@@ -55,6 +55,7 @@ span.outstanding {
   line-height: 20px;
   display: inline-block;
   vertical-align: bottom;
+  cursor: default;
 }
 .btn-green.btn-sm:hover {
   color: #fff;
@@ -65,6 +66,7 @@ span.btn-orange.btn-sm {
   line-height: 20px;
   display: inline-block;
   vertical-align: bottom;
+  cursor: default;
 }
 span.btn-orange.btn-sm:hover {
   color: #fff;
