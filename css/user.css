@@ -519,3 +519,10 @@ ul.inline-block li {
 .table-bordered > tfoot > tr > td {
   border-color: #CDCDCD;
 }
+span.list-left {
+  width: 100px;
+  display: inline-block;
+}
+.no-margin {
+  margin: 0 !important;
+}
