@@ -161,6 +161,7 @@ footer hr {
 .user-sidebar > section .title .btn-green,
 .user-content > section .title .btn-green {
   background: #36A739;
+  cursor: pointer;
 }
 .user-sidebar > section .title .btn-green:hover,
 .user-content > section .title .btn-green:hover {
@@ -227,7 +228,7 @@ footer hr {
   position: absolute;
   left: 0;
   font-size: 16px;
-  color: #0091d0;
+  color: #313541;
 }
 .user-content section.user-dashboard-info .validation-info .envelope::before {
   content: "\2709";
@@ -279,7 +280,7 @@ footer hr {
   padding-left: 12px;
 }
 .text-sm {
-  font-size: 12px;
+  font-size: 13px;
 }
 .text-lg {
   font-size: 16px;
@@ -288,12 +289,27 @@ footer hr {
   background: #FF6600;
   color: #fff;
 }
-strong {
-  font-size: 14px;
+small {
+  font-size: 13px;
 }
 table .row {
   margin: 0;
 }
 table .row > div {
   padding: 0;
+}
+section form {
+  margin: 72px auto;
+  width: 80%;
+}
+.btn-light-blue {
+  background: -webkit-gradient(linear, , from(#f2f6f9), to(#e0e9ee));
+  background: -webkit-linear-gradient(right top, #f2f6f9, #e0e9ee);
+  background: linear-gradient(to left bottom, #f2f6f9, #e0e9ee);
+  border: 1px solid #bcf;
+  border-radius: 0;
+  padding: 12px 40px;
+}
+.btn-light-blue:hover {
+  background: #ddeaff;
 }

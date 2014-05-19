@@ -213,6 +213,7 @@ footer {
 
 			.btn-green {
 				background: #36A739;
+				cursor: pointer;
 
 				&:hover {
 					background: #6FC819;
@@ -288,7 +289,7 @@ footer {
 					position: absolute;
 					left: 0;
 					font-size: 16px;
-					color: @c-blue;
+					color: #313541;
 				}
 			}
 
@@ -359,7 +360,7 @@ footer {
 }
 
 .text-sm {
-	font-size: 12px;
+	font-size: 13px;
 }
 .text-lg {
 	font-size: 16px;
@@ -369,13 +370,32 @@ footer {
 	background: #FF6600;
 	color: #fff;
 }
-strong {
-	font-size: 14px;
+
+small {
+	font-size: 13px;
 }
 
 table .row {
 	margin: 0;
 	>div {
 		padding: 0;
+	}
+}
+
+section {
+	form {
+		margin: 72px auto;
+		width: 80%;
+	}
+}
+
+.btn-light-blue {
+	background: linear-gradient(to left bottom, #f2f6f9, #e0e9ee);
+	border: 1px solid #bcf;
+	border-radius: 0;
+	padding: 12px 40px;
+
+	&:hover {
+		background: #BBC8FF + #222;
 	}
 }
