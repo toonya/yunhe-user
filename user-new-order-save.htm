@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>云和恩墨</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/user.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+    	<div class="page">
+    		<!-- header -->
+	    	<header class="main user">
+		    	<div class="container">
+		    		<div class="logo pull-left">
+		    			<a href="index.html"><img src="images/logo-white.png" alt="logo" class="img-responsive"></a>
+		    		</div>
+		    		<div class="pull-right user-action">
+			    		<a href="user-main.html">
+				    		<div class="avatar inline-block"><img src="images/avatar.jpg" alt="avatar" class="img-responsive"></div>
+							<div class="user-name inline-block">ChrisMa</div>
+			    		</a>
+		    		</div>
+		    		<div class="clearfix"></div>
+		    	</div>
+	    	</header>
+	    	<!-- header end -->
+
+	    	<!-- main area -->
+	    	<div class="primary">
+
+				<div class="order-state">
+					<!-- 正在进行的项目 li 添加 now; 已经完成的li 添加done; 未进行的不用添加 -->
+					<ul>
+						<li class="now"><div class="block">1</div><div class="describe">完善服务购买信息</div></li>
+						<li><div class="block">2</div><div class="describe">等待确认（需等候销售人员联系）</div></li>
+						<li><div class="block">√</div><div class="describe">购买成功</div></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="bg-white">
+					<div class="container pd-md">
+						<div class="white-block"></div>
+
+						<div class="block-light-blue block-bordered">
+							<span class="glyphicon glyphicon-info-sign text-primary"></span>
+							<span class="pl12">请根据您的具体情况填写以下信息！我们将根据您所提交的订单为您提供相应的数据保险服务。</span>
+						</div>
+
+						<form action="user-new-order-save.html" role="form" class="form-horizontal form-left-label label-normal form-muted form-group-md">
+							<section class="mb-md pt-sm">
+								<h4 class="overline"><span>服务套餐</span></h4>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">套餐类型:</label>
+									<div class="col-sm-2">
+										<select class="form-control" id="" name="co[industry]">
+											<option value="">A 套餐</option>
+											<option value="">B 套餐</option>
+										</select>
+									</div>
+									<div class="col-sm-2">
+										<select class="form-control" id="" name="co[industry]">
+											<option value="">单套数据库</option>
+											<option value="">RAC 多节点数据库</option>
+										</select>
+									</div>
+									<div class="col-sm-4">
+										<p class="inline-block">节点数量:</p>
+										<span class="pl12"></span>
+										<input type="text" data-ride="num" data-min="1" data-error=".error" class="form-control inline-block input-sm" id="" placeholder="" value="1" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">服务年限:</label>
+									<div class="col-sm-8">
+										<input type="text" data-ride="num" data-min="1" data-error=".error" class="form-control inline-block input-sm" id="" placeholder="" value="1" />
+										<p class="inline-block">
+											<span class="pl12">年</span>
+											<span class="text-muted pl12">*服务生效时间以合同上所标注的具体时间为准</span>
+										</p>
+									</div>
+								</div>
+							</section>
+
+							<section class="mb-md">
+								<h4 class="overline"><span>可选服务项目</span></h4>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">项目类型:</label>
+									<div class="col-sm-4">
+										<div class="checkbox-block">
+											<label for="addService01">
+												<input id="addService01" type="checkbox" />
+												<span class="pl12">远程巡检及巡检报告</span>
+												<span class="pl-md">4000元/份</span>
+											</label>
+										</div>
+										<div class="checkbox-block mt-sm">
+											<label for="addService02">
+												<input id="addService02" type="checkbox" />
+												<span class="pl12">数据库备份方案及实施</span>
+												<span class="pl-md">6000元/套数据库</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</section>
+							<hr class="mb-md mt-sm hr-black" />
+							<section class="mb-md">
+								<h4 class="overline"><span>联系方式</span></h4>
+								<div class="form-group" data-required>
+									<label for="co[name]" class="col-sm-2 control-label">公司名称:</label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" id="" name="co[name]">
+									</div>
+								</div>
+								<div class="form-group" data-required>
+									<label for="co[contact]" class="col-sm-2 control-label">联系人姓名:</label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" id="" name="co[contact]">
+									</div>
+								</div>
+								<div class="form-group" data-required>
+									<label for="co[email]" class="col-sm-2 control-label">E-mail</label>
+									<div class="col-sm-3">
+										<input type="email" class="form-control" id="" name="co[email]">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="contact[cellphone]" class="col-sm-2 control-label">联系方式</label>
+									<div class="col-sm-2">
+										<input type="tel" class="form-control" id="" name="contact[cellphone]" placeholder="手机号">
+									</div>
+									<div class="col-sm-1 text-center">
+										<p>或</p>
+									</div>
+
+									<div class="col-sm-1">
+										<input type="text" placeholder="区号" class="inline-block form-control" />
+									</div>
+
+									<div class="col-sm-2">
+										<input type="text" placeholder="座机号" class="inline-block form-control" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="contact[cellphone]" class="col-sm-2 control-label"></label>
+									<div class="col-sm-2">
+										<button class="btn btn-light-blue" type="submit">保存</button>
+									</div>
+								</div>
+							</section>
+						</form>
+						<form action="">
+							<section>
+								<div class="well text-right">
+									您共为<span class="text-orange pl12 pr12">0</span>套数据库购买了数据保险服
+
+									<span class="pl-md">合计费用:</span>
+									<span class="pl-md pr12 text-xlg"><span class="text-orange pr12">￥ 0</span> 元</span>
+									<button class="btn btn-green v-bottom" type="submit" disabled>提交</button>
+								</div>
+							</section>
+						</form>
+					</div>
+				</div>
+
+	    	</div>
+	    	<!-- main area end -->
+
+	    	<!-- footer -->
+	    	<footer>
+		    	<div class="container">
+		    		<div class="footer-info text-center">
+			    		<p>关于云和恩墨  |  了解我们  |  联系我们</p>
+			    		<p>京ICP备13025326号-2  |  京公网安备11010802012368号</p>
+			    		<p>北京云和恩墨有限公司</p>
+			    		<p>Copyright © 2012-2014 EnMoTech.com</p>
+		    		</div>
+		    	</div>
+	    	</footer>
+	    	<!-- footer end -->
+    	</div>
+
+    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/bootstrap-number-input.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

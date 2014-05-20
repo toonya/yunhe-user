@@ -415,6 +415,9 @@ footer {
 .text-lg {
 	font-size: 16px;
 }
+.text-xlg {
+	font-size: 20px;
+}
 
 .btn-orange {
 	background: #FF6600;
@@ -552,6 +555,91 @@ section {
 			.block {
 				&::after {
 					border: none;
+				}
+			}
+		}
+	}
+}
+
+.order-state {
+	margin: 48px auto 36px;
+
+	ul {
+		list-style: none;
+		width: 630px;
+		padding: 0;
+		margin: 0 auto;
+
+		li {
+			width: 300px;
+			position: relative;
+			float: left;
+
+			>div.block {
+				width: 42px;
+				height: 42px;
+				border: solid 1px #555;
+				line-height: 30px;
+				border-radius: 21px;
+				text-align: center;
+				position: relative;
+				font-family: Arial;
+				background: #fff;
+				line-height: 42px;
+
+				&::after {
+					position: absolute;
+					right: 0;
+					width: 300px;
+					height: 10px;
+					border: 1px solid #555;
+					border-left: none;
+					border-right: none;
+					right: -285px;
+					top: 14px;
+					content: " ";
+					z-index: -1;
+					background: #fff;
+				}
+			}
+
+			>div.describe {
+				position: absolute;
+				width: 300px;
+				text-align: center;
+				left: 21px;
+				transform: translateX(-50%);
+				top: -40px;
+				font-size: 13px;
+			}
+		}
+
+		li.now {
+			.block {
+				background: #36A739;
+				border-color: #36A739;
+				color: #fff;
+			}
+		}
+
+		li.done {
+			.block {
+				background: #36A739;
+				border-color: #36A739;
+				color: #fff;
+
+				&::after {
+					background: #36A739;
+				}
+			}
+		}
+
+		li:last-child {
+			width: 30px;
+
+			.block {
+				&::after {
+					display: none;
 				}
 			}
 		}
@@ -704,9 +792,12 @@ div.btn-file .hidden-file {
 	text-align: left;
 }
 
-.form-horizontal p {
+form p {
 	padding-top: 7px;
 	margin-bottom: 0;
+}
+form p.inline-block {
+	vertical-align: top;
 }
 .form-muted {
 	color: #666666;
@@ -764,4 +855,79 @@ table.h48 {
 	border-top-right-radius: 6px;
 
 	background: #E5E5E5;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+.block-light-blue.block-bordered {
+	background: #E5F3FF;
+	border: dashed 1px #aaa;
+	padding: 6px 15px;
+}
+
+.pd-md {
+	padding: 24px;
+}
+
+.mb-md {
+	margin-bottom: 48px;
+}
+
+.mb-lg {
+	margin-bottom: 72px;
+}
+
+.pt-md {
+	padding-top: 48px;
+}
+.pt-sm {
+	padding-top: 24px;
+}
+
+.label-normal {
+	label {
+		font-weight: normal;
+	}
+}
+
+.form-group-md {
+	.form-group {
+		margin-bottom: 24px;
+	}
+}
+.pl-md {
+	padding-left: 24px;
+}
+
+.checkbox-block {
+	padding: 10px 24px 8px;
+	border: 1px dashed;
+
+	line-height: normal;
+}
+
+.mt-sm {
+	margin-top: 24px;
+}
+.mb-sm {
+	margin-bottom: 24px;
+}
+
+.hr-black {
+	border-color: #333;
+}
+.pr12 {
+	padding-right: 12px;
+}
+.btn.v-bottom {
+	vertical-align: middle;
+	padding: 6px 24px;
+	border-radius: 0;
+	margin-left: 48px;
+
+	&:disabled {
+		background: #aaa;
+	}
 }
