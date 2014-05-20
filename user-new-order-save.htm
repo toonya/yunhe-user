@@ -49,124 +49,80 @@
 					<div class="container pd-md">
 						<div class="white-block"></div>
 
-						<div class="block-light-blue block-bordered">
-							<span class="glyphicon glyphicon-info-sign text-primary"></span>
-							<span class="pl12">请根据您的具体情况填写以下信息！我们将根据您所提交的订单为您提供相应的数据保险服务。</span>
+						<div class="block-green block-bordered">
+							<span class="glyphicon glyphicon-ok-sign text-success"></span>
+							<span class="pl12">保存成功！请直接提交订单，等待我们的服务人员与您联系，提供进一步的服务。</span>
 						</div>
 
-						<form action="user-new-order-save.html" role="form" class="form-horizontal form-left-label label-normal form-muted form-group-md">
-							<section class="mb-md pt-sm">
-								<h4 class="overline"><span>服务套餐</span></h4>
-								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">套餐类型:</label>
-									<div class="col-sm-2">
-										<select class="form-control" id="" name="co[industry]">
-											<option value="">A 套餐</option>
-											<option value="">B 套餐</option>
-										</select>
-									</div>
-									<div class="col-sm-2">
-										<select class="form-control" id="" name="co[industry]">
-											<option value="">单套数据库</option>
-											<option value="">RAC 多节点数据库</option>
-										</select>
-									</div>
-									<div class="col-sm-4">
-										<p class="inline-block">节点数量:</p>
-										<span class="pl12"></span>
-										<input type="text" data-ride="num" data-min="1" data-error=".error" class="form-control inline-block input-sm" id="" placeholder="" value="1" />
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">服务年限:</label>
-									<div class="col-sm-8">
-										<input type="text" data-ride="num" data-min="1" data-error=".error" class="form-control inline-block input-sm" id="" placeholder="" value="1" />
-										<p class="inline-block">
-											<span class="pl12">年</span>
-											<span class="text-muted pl12">*服务生效时间以合同上所标注的具体时间为准</span>
+						<h4>希望购买的数据库<a href="user-new-order.html" class="pl-md"><small class="text-primary">修改</small></a></h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<td class="col-xs-4">
+										<p><strong>服务套餐</strong></p>
+										<div class="row text-sm">
+											<div class="col-xs-4">A套餐</div>
+											<div class="col-xs-8">RAC多节点数据库</div>
+											<div class="clearfix"></div>
+											<div class="col-xs-4">节点数量:</div>
+											<div class="col-xs-8"><div class="text-orange">3</div></div>
+											<div class="clearfix"></div>
+											<div class="col-xs-4">服务年限:</div>
+											<div class="col-xs-8"><span class="text-orange">2</span><span class="pl12">年</span></div>
+										</div>
+										<p>
+											<div class="row text-sm">
+												<div class="col-xs-4"><div class="text-orange">￥48,000</div></div>
+												<div class="col-xs-8">元</div>
+											</div>
 										</p>
-									</div>
-								</div>
-							</section>
+									</td>
+									<td class="col-xs-4">
+										<p><strong>可选服务</strong></p>
+										<div class="text-sm">远程巡检及巡检报告</div>
+										<div class="text-sm">数据库备份方案及实施</div>
+										<p></p>
+										<p class="text-sm">
+											<span class="text-orange">￥10,000</span>
+											<span class="pl12">元</span>
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 
-							<section class="mb-md">
-								<h4 class="overline"><span>可选服务项目</span></h4>
-								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">项目类型:</label>
-									<div class="col-sm-4">
-										<div class="checkbox-block">
-											<label for="addService01">
-												<input id="addService01" type="checkbox" />
-												<span class="pl12">远程巡检及巡检报告</span>
-												<span class="pl-md">4000元/份</span>
-											</label>
-										</div>
-										<div class="checkbox-block mt-sm">
-											<label for="addService02">
-												<input id="addService02" type="checkbox" />
-												<span class="pl12">数据库备份方案及实施</span>
-												<span class="pl-md">6000元/套数据库</span>
-											</label>
-										</div>
-									</div>
-								</div>
-							</section>
-							<hr class="mb-md mt-sm hr-black" />
-							<section class="mb-md">
-								<h4 class="overline"><span>联系方式</span></h4>
-								<div class="form-group" data-required>
-									<label for="co[name]" class="col-sm-2 control-label">公司名称:</label>
-									<div class="col-sm-3">
-										<input type="text" class="form-control" id="" name="co[name]">
-									</div>
-								</div>
-								<div class="form-group" data-required>
-									<label for="co[contact]" class="col-sm-2 control-label">联系人姓名:</label>
-									<div class="col-sm-3">
-										<input type="text" class="form-control" id="" name="co[contact]">
-									</div>
-								</div>
-								<div class="form-group" data-required>
-									<label for="co[email]" class="col-sm-2 control-label">E-mail</label>
-									<div class="col-sm-3">
-										<input type="email" class="form-control" id="" name="co[email]">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="contact[cellphone]" class="col-sm-2 control-label">联系方式</label>
-									<div class="col-sm-2">
-										<input type="tel" class="form-control" id="" name="contact[cellphone]" placeholder="手机号">
-									</div>
-									<div class="col-sm-1 text-center">
-										<p>或</p>
-									</div>
+						<hr class="hr-black" />
 
-									<div class="col-sm-1">
-										<input type="text" placeholder="区号" class="inline-block form-control" />
-									</div>
+						<div class="co-info mb-md">
 
-									<div class="col-sm-2">
-										<input type="text" placeholder="座机号" class="inline-block form-control" />
-									</div>
-								</div>
+							<h4>公司信息及联系方式<a href="user-new-order.html" class="pl-md"><small class="text-primary">修改</small></a></h4>
 
-								<div class="form-group">
-									<label for="contact[cellphone]" class="col-sm-2 control-label"></label>
-									<div class="col-sm-2">
-										<button class="btn btn-light-blue" type="submit">保存</button>
-									</div>
-								</div>
-							</section>
-						</form>
-						<form action="">
+							<div class="row">
+								<div class="col-xs-3">公司名称:</div>
+								<div class="col-xs-8">重庆猪八戒网络科技有限公司</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">联系人:</div>
+								<div class="col-xs-8">蒋开建</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">E-mail:</div>
+								<div class="col-xs-8">kaijian_jiang@zhubajie.com</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">联系方式:</div>
+								<div class="col-xs-8">18685965656,023-69863325</div>
+							</div>
+						</div>
+
+						<form action="user-new-order-waiting.html">
 							<section>
 								<div class="well text-right">
-									您共为<span class="text-orange pl12 pr12">0</span>套数据库购买了数据保险服
+									您共为<span class="text-orange pl12 pr12">1</span>套数据库购买了数据保险服
 
 									<span class="pl-md">合计费用:</span>
-									<span class="pl-md pr12 text-xlg"><span class="text-orange pr12">￥ 0</span> 元</span>
-									<button class="btn btn-green v-bottom" type="submit" disabled>提交</button>
+									<span class="pl-md pr12 text-xlg"><span class="text-orange pr12">￥ 58,000</span> 元</span>
+									<button class="btn btn-green v-bottom" type="submit">提交</button>
 								</div>
 							</section>
 						</form>

@@ -696,7 +696,12 @@ table.h48 tr:last-child td {
 .block-light-blue.block-bordered {
   background: #E5F3FF;
   border: dashed 1px #aaa;
-  padding: 6px 15px;
+  padding: 8px 15px;
+}
+.block-green.block-bordered {
+  background: #E0F6DE;
+  border: dashed 1px #aaa;
+  padding: 8px 15px;
 }
 .pd-md {
   padding: 24px;
@@ -740,11 +745,24 @@ table.h48 tr:last-child td {
   padding-right: 12px;
 }
 .btn.v-bottom {
-  vertical-align: middle;
-  padding: 6px 24px;
+  vertical-align: bottom;
+  padding: 6px 30px;
   border-radius: 0;
   margin-left: 48px;
 }
+.btn.v-bottom:hover {
+  color: #fff;
+  background: #11cf4b;
+}
 .btn.v-bottom:disabled {
   background: #aaa;
+}
+.pb-lg {
+  padding-bottom: 72px;
+}
+.pt-lg {
+  padding-top: 72px;
+}
+.min-md {
+  min-height: 480px;
 }
