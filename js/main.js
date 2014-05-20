@@ -144,5 +144,14 @@
 		}
 	});
 
+	// ----------------------------------------
+	// ! auto open validation window
+	// ----------------------------------------
+	$('[data-is-validated="false"]').first().click();
+
+	$('[data-is-validated="true"]').click(function(e){
+		e.preventDefault();
+		e.stopImmediatePropagation();
+	})
 
 })(jQuery)

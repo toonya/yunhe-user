@@ -363,6 +363,7 @@ section form.no-margin {
   border: 1px solid #bcf;
   border-radius: 0;
   padding: 12px 40px;
+  color: #000;
 }
 .btn-light-blue:hover {
   background: #ddeaff;
@@ -601,4 +602,15 @@ table.h48 td {
 }
 table.h48 tr:last-child td {
   border-bottom: 1px solid #ddd;
+}
+.modal-md {
+  margin: 150px auto;
+}
+.modal-body.pd-lg {
+  padding: 48px;
+}
+.modal-header.bg-gray {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #E5E5E5;
 }

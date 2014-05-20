@@ -15,6 +15,78 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+    	<div id="v-email" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-md">
+		    <div class="modal-content">
+		      	<div class="modal-header bg-gray">
+			    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">系统提醒</h4>
+			    </div>
+			    <div class="modal-body pd-lg">
+					<div class="row">
+						<div class="col-xs-2 text-right">
+							<span class="glyphicon glyphicon-info-sign text-primary"></span>
+						</div>
+				    	<div class="col-xs-10">
+							<p>
+								您的邮箱还没有验证，请及时验证，确保帐号安全。若未收到验证邮件，请在“垃圾邮件”中找找，或者
+							</p>
+							<div class="white-block"></div>
+							<a href="" class="btn btn-sm btn-light-blue">
+								重新发送验证邮件
+							</a>
+				    	</div>
+			    	</div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="v-phone" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-md">
+		    <div class="modal-content">
+		      	<div class="modal-header bg-gray">
+			    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">系统提醒</h4>
+			    </div>
+			    <div class="modal-body pd-lg">
+					<form action="" role="form" class="form-horizontal form-left-label">
+						<div class="row">
+				    		<div class="col-xs-2 text-right">
+					    		<span class="glyphicon glyphicon-info-sign text-primary"></span>
+					    	</div>
+					    	<div class="col-xs-10">
+								<div>您还没有绑定手机，帐号还存在一定风险。</div>
+								<div class="white-block"></div>
+						    	<div class="form-group">
+									<label for="phone[number]" class="col-sm-3 control-label">手机号:</label>
+									<div class="col-sm-7" data-required>
+										<input type="text" class="form-control" id="" name="phone[number]">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="phone[validation]" class="col-sm-3 control-label">验证码:</label>
+									<div class="col-sm-4" data-required>
+										<input type="text" class="form-control" id="" name="phone[validation]">
+									</div>
+									<div class="col-sm-2" style="padding-left: 0px;">
+										<a href="" class="btn btn-sm btn-light-blue">获取验证码</a>
+									</div>
+								</div>
+								<div class="white-block"></div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-9">
+										<button type="submit" class="btn btn-light-blue btn-sm">立即绑定</button>
+									</div>
+								</div>
+					    	</div>
+				    	</div>
+					</form>
+				</div>
+		    </div>
+		  </div>
+		</div>
+
 
     	<div class="page">
     		<!-- header -->
@@ -85,8 +157,8 @@
 									<div class="username"><span class="text-muted">Hello，</span>老琦</div>
 								</div>
 								<div class="validation-info">
-									<a href="user-validation-email"><span class="text-success envelope">邮箱已验证</span></a>
-									<a href="user-validation-phone"><span class="text-danger phone">手机未绑定</span></a>
+									<a href="#" data-is-validated="true" data-toggle="modal" data-target="#v-email"><span class="text-success envelope">邮箱已验证</span></a>
+									<a href="#" data-is-validated="false" data-toggle="modal" data-target="#v-phone"><span class="text-danger phone">手机未绑定</span></a>
 								</div>
 								<div class="clearfix"></div>
 							</section>
