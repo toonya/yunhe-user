@@ -316,37 +316,42 @@ footer {
 			padding-left: 104px;
 			margin-top: 12px;
 
-			.envelope, .phone {
-				position: relative;
-				padding-left: 22px;
-
-				&::before {
-					font-family: 'Glyphicons Halflings';
-					position: absolute;
-					left: 0;
-					font-size: 16px;
-					color: #313541;
-				}
-			}
-
-			.envelope {
-				&::before {
-					content: "\2709";
-				}
-			}
-
 			.phone {
-				display: inline-block;
 				margin-left: 24px;
-				&::before {
-					content: "\e145";
-				}
-			}
-
-			.text-success {
-				color: @c-green;
 			}
 		}
+	}
+}
+
+.validation-info {
+	.envelope, .phone {
+		position: relative;
+		padding-left: 22px;
+
+		&::before {
+			font-family: 'Glyphicons Halflings';
+			position: absolute;
+			left: 0;
+			font-size: 16px;
+			color: #313541;
+		}
+	}
+
+	.envelope {
+		&::before {
+			content: "\2709";
+		}
+	}
+
+	.phone {
+		display: inline-block;
+		&::before {
+			content: "\e145";
+		}
+	}
+
+	.text-success {
+		color: @c-green;
 	}
 }
 
@@ -442,6 +447,11 @@ section {
 	form {
 		margin: 72px auto;
 		width: 80%;
+	}
+
+	form.no-margin {
+		margin: 0;
+		width: 100%;
 	}
 }
 
@@ -654,4 +664,70 @@ span.list-left {
 }
 .no-margin {
 	margin: 0 !important;
+}
+
+
+span.btn-file {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+span.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100px;
+  min-height: 50px;
+  font-size: 99px;
+  text-align: right;
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+div.btn-file {
+  display: inline-block;
+}
+div.btn-file .hidden-file {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.form-left-label.form-horizontal .control-label {
+	text-align: left;
+}
+
+.form-horizontal p {
+	padding-top: 7px;
+	margin-bottom: 0;
+}
+.form-muted {
+	color: #666666;
+}
+h4.overline {
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 24px;
+
+	span {
+		padding: 0 12px;
+		background: #fff;
+		display: inline-block;
+		position: relative;
+		z-index: 100;
+	}
+
+	&::after {
+		position: absolute;
+		content: " ";
+		height: 1px;
+		width: 100%;
+		left: 0;
+		border-top: dotted 1px #aaa;
+		top: 7px;
+		z-index: 0;
+	}
 }

@@ -95,4 +95,53 @@
 
 	$('.add-star .glyphicon:lt('+$('.add-star :hidden').val()+')').removeClass('glyphicon-star-empty').addClass('glyphicon glyphicon-star');
 
+	// ----------------------------------------
+	// ! avatar file upload
+	// ----------------------------------------
+	$('.open-file-upload').click(function(e){
+		e.preventDefault();
+
+		$($(this).data('target')).trigger('click');
+	})
+
+	$('.hidden-file').on('change', ':file', function(){
+		if(this.files[0].type.match('image'))
+			readURL(this);
+		else {
+			alert('请检查文件格式，只能上传图片作为头像');
+			$(this).replaceWith($('<input name="user[avatar]" id="avatar" type="file" accept="image/*" />'));
+		}
+	})
+
+	function readURL(input) {
+
+	    if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+
+	        reader.onload = function (e) {
+	            $('.open-file-upload').find('img').attr('src', e.target.result);
+	        }
+
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
+
+	// ----------------------------------------
+	// ! modify
+	// ----------------------------------------
+	$('[data-ride="modify"]').click(function(e){
+		e.preventDefault();
+
+		$('[data-group="'+ $(this).data('group') +'"]').find('[data-toggle]').toggleClass('hide');
+	})
+
+	$("input").keypress(function (evt) {
+		//Deterime where our character code is coming from within the event
+		var charCode = evt.charCode || evt.keyCode;
+		if (charCode  == 13) { //Enter key's keycode
+			return false;
+		}
+	});
+
+
 })(jQuery)
