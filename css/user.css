@@ -370,6 +370,9 @@ section form.no-margin {
 .btn-light-blue.btn-sm {
   padding: 6px 20px;
 }
+.btn-light-blue.btn-xs {
+  padding: 3px 12px;
+}
 /* pagination */
 .pagination li a {
   color: #333;
@@ -591,4 +594,11 @@ h4.overline::after {
   border-top: dotted 1px #aaa;
   top: 7px;
   z-index: 0;
+}
+table.h48 td {
+  height: 48px;
+  vertical-align: middle !important;
+}
+table.h48 tr:last-child td {
+  border-bottom: 1px solid #ddd;
 }
