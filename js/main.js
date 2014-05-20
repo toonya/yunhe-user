@@ -119,7 +119,8 @@
 	        var reader = new FileReader();
 
 	        reader.onload = function (e) {
-	            $('.open-file-upload').find('img').attr('src', e.target.result);
+	        	var $img_group = $( 'img[data-group="'+$(input).data('group')+'"]');
+	            $img_group.attr('src', e.target.result);
 	        }
 
 	        reader.readAsDataURL(input.files[0]);
