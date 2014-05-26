@@ -18,7 +18,13 @@
 // ----------------------------------------
 // ! common style
 // ----------------------------------------
+.inline-block {
+	display: inline-block;
 
+	&.btnfix {
+		margin-top: 3px;
+	}
+}
 .well {
 	blockquote {
 		border: none;
@@ -109,6 +115,16 @@ a, img {
 	border-color: red;
 }
 
+.glyphicon-vmd {
+	&::before {
+		top: 5px;
+	}
+}
+
+.glyphicon-top-2 {
+	top: 2px;
+}
+
 // ----------------------------------------
 // ! header
 // ----------------------------------------
@@ -127,7 +143,31 @@ header {
 		a {
 			display: inline-block;
 			margin-right: 24px;
+			transition: .65s;
+
+			&:hover {
+				color: #000;
+				text-decoration: none;
+			}
 		}
+
+		.avatar {
+			width: 40px;
+			vertical-align: middle;
+		}
+		.user-name {
+			transition: .65s;
+			padding-left: 6px;
+		}
+		.quit {
+			transition: .65s;
+
+			&:hover {
+				text-decoration: none;
+				color: #000;
+			}
+		}
+
 	}
 }
 

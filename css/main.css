@@ -1,3 +1,9 @@
+.inline-block {
+  display: inline-block;
+}
+.inline-block.btnfix {
+  margin-top: 3px;
+}
 .well blockquote {
   border: none;
   margin: 0;
@@ -76,6 +82,12 @@ img {
 :invalid {
   border-color: red;
 }
+.glyphicon-vmd::before {
+  top: 5px;
+}
+.glyphicon-top-2 {
+  top: 2px;
+}
 header {
   line-height: 62px;
   height: 62px;
@@ -88,6 +100,29 @@ header .logo {
 header .user-action a {
   display: inline-block;
   margin-right: 24px;
+  -webkit-transition: .65s;
+  transition: .65s;
+}
+header .user-action a:hover {
+  color: #000;
+  text-decoration: none;
+}
+header .user-action .avatar {
+  width: 40px;
+  vertical-align: middle;
+}
+header .user-action .user-name {
+  -webkit-transition: .65s;
+  transition: .65s;
+  padding-left: 6px;
+}
+header .user-action .quit {
+  -webkit-transition: .65s;
+  transition: .65s;
+}
+header .user-action .quit:hover {
+  text-decoration: none;
+  color: #000;
 }
 .carousel-caption {
   left: 10.8%;

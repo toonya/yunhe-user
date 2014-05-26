@@ -179,6 +179,16 @@ body {
 	background: #F2F2F2;
 }
 
+.glyphicon-vmd {
+	&::before {
+		top: 5px;
+	}
+}
+
+.glyphicon-top-2 {
+	top: 2px;
+}
+
 // ----------------------------------------
 // ! main
 // ----------------------------------------
@@ -207,7 +217,15 @@ header.user.main {
 		a:hover {
 			.user-name {
 				color: #fff;
+				text-decoration: none;
 			}
+		}
+		.quit:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		.quit {
+			transition: .65s;
 		}
 	}
 }

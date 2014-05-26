@@ -135,6 +135,12 @@ a:hover {
 body {
   background: #F2F2F2;
 }
+.glyphicon-vmd::before {
+  top: 5px;
+}
+.glyphicon-top-2 {
+  top: 2px;
+}
 header.user.main {
   line-height: 70px;
   height: 70px;
@@ -157,6 +163,15 @@ header.user.main .user-action .user-name {
 }
 header.user.main .user-action a:hover .user-name {
   color: #fff;
+  text-decoration: none;
+}
+header.user.main .user-action .quit:hover {
+  color: #fff;
+  text-decoration: none;
+}
+header.user.main .user-action .quit {
+  -webkit-transition: .65s;
+  transition: .65s;
 }
 .primary {
   padding: 24px 0;
