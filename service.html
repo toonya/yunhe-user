@@ -52,28 +52,34 @@
 					<!-- service plan -->
 					<section class="service-plan">
 						<div class="section-inner">
-							<!-- Nav tabs -->
+							<!-- 服务方案导航 增加li，内容放在后面的 tab－content里 注意这里的href为对应服务方案的id -->
 							<ul class="nav nav-pills">
 								<li class="active"><a href="#planA" data-toggle="tab">服务方案A</a></li>
 								<li><a href="#planB" data-toggle="tab">服务方案B</a></li>
 							</ul>
 
-							<!-- Tab panes -->
 							<div class="tab-content">
+								<!-- 开始方案，注意id 与 导航处的href 对应关系 -->
 								<div class="tab-pane active" id="planA">
 									<div class="row">
 										<div class="col-xs-7">
 											<div class="white-block"></div>
 											<div class="white-block"></div>
 											<div class="white-block"></div>
+											<!-- 方案名称开始 -->
 											<h1>普通故障支援，随叫随到</h1>
+											<!-- 方案名称结束 -->
+											<!-- 方案优点描述开始 -->
 											<ul>
 												<li>不限次数的远程支援服务（针对一级/二级故障）</li>
 												<li>不限次数、不限故障等级的电话/邮件咨询服务</li>
 											</ul>
+											<!-- 方案优点描述结束 -->
 
 											<div class="white-block"></div>
 
+
+											<!-- if 方案含有多套套餐 -->
 											<div class="price-plan-item">
 												<span>单套数据库</span>
 												<span><span class="text-green outstanding">18,000</span> 元/年</span>
@@ -84,12 +90,28 @@
 												<span><span class="text-green outstanding">22,000</span> 元/年</span>
 												<small>*每增D加一节点增加￥2000元</small>
 											</div>
+											<!-- 这里为多套套餐结束 -->
+
+											<!-- if 方案只有一种套餐 -->
+											<!--
 											<div class="white-block"></div>
+											<div class="price-plan-item single">
+												<span>单套数据库</span>
+												<span><span class="text-green outstanding">12,000</span> 元/年</span>
+												<small>*与是否RAC数据库无关</small>
+											</div>
+											-->
+											<!-- 这里为单套套餐结束 -->
+
+
+											<div class="white-block"></div>
+											<!-- 可选项目开始 -->
 											<div class="row">
 												<div class="col-xs-3">*可选服务项目：</div>
 												<div class="col-xs-4">远程巡检及巡检报告</div>
 												<div class="col-xs-3">4000元/份报告</div>
 											</div>
+											<!-- 可选项目结束 重复即可 ，重复时候第一个子div 留空 -->
 											<div class="row">
 												<div class="col-xs-3"></div>
 												<div class="col-xs-4">数据库备份方案及实施</div>
@@ -97,14 +119,19 @@
 											</div>
 											<div class="white-block"></div>
 											<div class="text-center">
+												<!-- 购买链接 -->
 												<a href="" class="btn btn-green btn-buy">前往购买</a>
+												<!-- 购买链接结束 -->
 											</div>
 										</div>
 										<div class="col-xs-5 text-right">
+											<!-- 服务配图 -->
 											<img src="images/service-assets/service01.jpg" alt="service01" class="img-responsive">
+											<!-- 服务配图结束 -->
 										</div>
 									</div>
 								</div>
+								<!-- 服务结束，根据情况循环即可 -->
 								<div class="tab-pane" id="planB">
 									<div class="row">
 										<div class="col-xs-7">
@@ -157,7 +184,7 @@
 					<section class="other-service-plan">
 						<div class="header">
 							<div class="other-service-label">我们的可选服务</div>
-							<!-- Nav tabs -->
+							<!-- 这里的循环与服务方案类似，注意id不要重复 -->
 							<ul class="nav nav-pills">
 								<li class="active"><a href="#remote-check" data-toggle="tab">远程巡检</a></li>
 								<li><a href="#database-backup" data-toggle="tab">数据库备份方案</a></li>
@@ -166,9 +193,14 @@
 						<div class="section inner">
 							<!-- Tab panes -->
 							<div class="tab-content">
+								<!-- 这里的循环与服务方案类似，注意id不要重复 -->
+								<!-- 开始 -->
 								<div class="tab-pane active" id="remote-check">
+									<!-- 服务配图 -->
 									<img src="images/service-assets/service02.jpg" alt="service02" class="img-responsive">
+									<!-- 服务配图 -->
 								</div>
+								<!-- 结束，根据情况重复，注意不要重复id -->
 								<div class="tab-pane" id="database-backup">
 									<img src="images/service-assets/service02.jpg" alt="service02" class="img-responsive">
 								</div>
